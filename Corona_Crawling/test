@@ -1,0 +1,72 @@
+from bs4 import BeautifulSoup
+import urllib.request
+target_url = 'http://www.seoul.go.kr/coronaV/coronaStatus.do'
+html = urllib.request.urlopen(target_url).read()
+soup = BeautifulSoup(html, 'html.parser')
+
+table = soup.find('table', {'class' : 'tstyle05 tstyleP'})
+trs = table.find_all('tr')
+
+list_patient_number = []
+list_date = []
+list_gender = []
+list_address = []
+list_trip = []
+list_contact = []
+list_hospital = []
+
+for idx, tr in enumerate(trs):
+    if idx > 0:
+        tds = tr.find_all('td')
+        patient_number = list_patient_number.append(tds[0].text.strip())
+        date = list_date.append(tds[1].text.strip())
+        gender = list_gender.append(tds[2].text.strip())
+        address = list_address.append(tds[3].text.strip())
+        trip = list_trip.append(tds[4].text.strip())
+        contact = list_contact.append(tds[5].text.strip())
+        hospital = list_hospital.append(tds[6].text.strip())
+        print(patient_number, date, gender, address, trip, contact, hospital)
+
+
+file_patient = open('patient.txt', 'w', encoding='utf-8')
+file_date = open('date.txt','w', encoding='utf-8')
+file_gender = open('gender.txt','w',encoding='utf-8')
+file_address = open('address.txt', 'w', encoding='utf-8')
+file_trip = open('trip.txt', 'w', encoding='utf-8')
+file_contact = open('contact.txt', 'w', encoding='utf-8')
+file_hospital = open('hospital.txt', 'w', encoding='utf-8')
+
+for i in list_patient_number:
+    file_patient.write(i+'\n')
+
+file_patient.close()
+
+for i in list_date:
+    file_date.write(i+'\n')
+
+file_date.close()
+
+for i in list_gender:
+    file_gender.write(i+'\n')
+
+file_gender.close()
+
+for i in list_address:
+    file_address.write(i+'\n')
+
+file_address.close()
+
+for i in list_trip:
+    file_trip.write(i+'\n')
+
+file_trip.write(i+'\n')
+
+for i in list_contact:
+    file_contact.write(i+'\n')
+
+file_contact.close()
+
+for i in list_hospital:
+    file_hospital.write(i+'\n')
+
+file_hospital.close()
