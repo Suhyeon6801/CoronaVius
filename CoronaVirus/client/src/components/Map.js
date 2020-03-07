@@ -9,12 +9,12 @@ class Map extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            open: 'false',
             center: {
                 lat: 37.5666103,
                 lng: 126.9783882,
             },
-            zoom: 11
+            zoom: 11,
+            open: 'false'
         }
         this.panToNaver = this.panToNaver.bind(this);
     }
@@ -22,6 +22,7 @@ class Map extends React.Component {
     panToNaver() {
         this.setState({ center: { lat: 37.3595704, lng: 127.105399 } })
     }
+    
     handleClickOpen = () => {
         this.setState({
             open: true
@@ -135,31 +136,31 @@ class CirclePos extends React.Component{
         super(props);
         this.state = {
             contactData: [
-                { name: '종로구', Latitude: 37.6009055, longtitude: 126.9485623, radius : 3 },
-                { name: '중구', Latitude: 37.5576734, longtitude: 126.9766558,radius :1 },
-                { name: '용산구', Latitude: 37.5305001, longtitude: 126.9109271,radius : 3 },
-                { name: '성동구', Latitude: 37.5508716, longtitude: 127.0057898,radius : 5 },
-                { name: '광진구', Latitude: 37.5462664, longtitude: 127.0507653,radius : 3 },
-                { name: '동대문구', Latitude: 37.5835703, longtitude: 127.0154474, radius : 10 },
-                { name: '중랑구', Latitude: 37.5950445, longtitude: 127.0606008, radius : 10 },
-                { name: '성북구', Latitude: 37.6023087, longtitude: 126.9550242, radius : 15 },
-                { name: '강북구', Latitude: 37.6482078, longtitude: 126.9813015, radius : 10 },
-                { name: '노원구', Latitude: 37.6541905, longitude: 127.0419498, radius : 18 },
-                { name: '도봉구', Latitude: 37.6662274, longitude: 126.994853, radius : 10 },
-                { name: '은평구', Latitude: 37.6662274, longitude: 126.994853, radius : 1 },
-                { name: '서대문구', Latitude: 37.5833748, longitude: 126.9006405, radius : 11 },
-                { name: '마포구', Latitude: 37.5616592, longitude: 126.8736234, radius : 10 },
+                { name: '종로구', Latitude: 37.6009055, longtitude: 126.9485623, radius : 11 },
+                { name: '중구', Latitude: 37.5576734, longtitude: 126.9766558,radius : 0 },
+                { name: '용산구', Latitude: 37.5305001, longtitude: 126.9109271,radius : 1 },
+                { name: '성동구', Latitude: 37.5508716, longtitude: 127.0057898,radius : 3 },
+                { name: '광진구', Latitude: 37.5462664, longtitude: 127.0507653,radius : 2 },
+                { name: '동대문구', Latitude: 37.5835703, longtitude: 127.0154474, radius : 4 },
+                { name: '중랑구', Latitude: 37.5950445, longtitude: 127.0606008, radius : 2 },
+                { name: '성북구', Latitude: 37.6023087, longtitude: 126.9550242, radius : 5 },
+                { name: '강북구', Latitude: 37.6482078, longtitude: 126.9813015, radius : 2 },
+                { name: '노원구', Latitude: 37.6541905, longitude: 127.0419498, radius : 8 },
+                { name: '도봉구', Latitude: 37.6662274, longitude: 126.994853, radius : 1 },
+                { name: '은평구', Latitude: 37.6662274, longitude: 126.994853, radius : 7 },
+                { name: '서대문구', Latitude: 37.5833748, longitude: 126.9006405, radius : 4 },
+                { name: '마포구', Latitude: 37.5616592, longitude: 126.8736234, radius : 1 },
                 { name: '양천구', Latitude: 37.5274949, longitude: 126.8208588, radius : 2 },
-                { name: '강서구', Latitude: 37.5674043, longitude: 126.7533699, radius : 10 },
-                { name: '구로구', Latitude: 37.495828, longitude: 126.8228501, radius : 3 },
-                { name: '금천구', Latitude: 37.4600526, longitude: 126.8662469, radius : 10 },
-                { name: '영등포구', Latitude: 37.5208971, longitude: 126.8783065, radius : 10 },
-                { name: '동작구', Latitude: 37.4971749, longitude: 126.9093583, radius : 10 },
+                { name: '강서구', Latitude: 37.5674043, longitude: 126.7533699, radius : 2 },
+                { name: '구로구', Latitude: 37.495828, longitude: 126.8228501, radius : 1 },
+                { name: '금천구', Latitude: 37.4600526, longitude: 126.8662469, radius : 1 },
+                { name: '영등포구', Latitude: 37.5208971, longitude: 126.8783065, radius : 4 },
+                { name: '동작구', Latitude: 37.4971749, longitude: 126.9093583, radius : 1 },
                 { name: '관악구', Latitude: 37.4655159, longitude: 126.9092282, radius : 4 },
-                { name: '서초구', Latitude: 37.4761416, longitude: 126.9671612, radius : 10 },
+                { name: '서초구', Latitude: 37.4761416, longitude: 126.9671612, radius : 5 },
                 { name: '강남구', Latitude: 37.496828, longitude: 126.9977276, radius : 10 },
-                { name: '송파구', Latitude: 37.5047202, longitude: 127.0442531, radius : 20 },
-                { name: '강동구', Latitude: 37.5492786, longitude: 127.0762157, radius : 10 }
+                { name: '송파구', Latitude: 37.5047202, longitude: 127.0442531, radius : 12 },
+                { name: '강동구', Latitude: 37.5492786, longitude: 127.0762157, radius : 4 }
             ]
         };
     }
@@ -184,12 +185,12 @@ class CirclePos extends React.Component{
 
 class CircleInfo extends React.Component{
     render(){
-        const Colors=[]
+        //const Colors=[]
         return(
             <Circle 
             key={this.props.key}
             center={new window.naver.maps.LatLng(this.props.Latitude, this.props.longitude)}
-            radius={this.props.radius*100}
+            radius={this.props.radius*200}
             fillOpacity={0.5}
             fillColor={'#FF0000'}
             strokeColor={'red'}
