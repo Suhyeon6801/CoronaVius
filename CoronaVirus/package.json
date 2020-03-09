@@ -1,0 +1,31 @@
+{
+    "name": "Corea19",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "cd client && yarn start",
+        "server": "nodemon server.js",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    },
+    "dependencies": {
+        "@material-ui/icons": "^4.9.1",
+        "axios": "^0.19.2",
+        "body-parser": "^1.18.3",
+        "chart.js": "^2.9.3",
+        "express": "^4.16.4",
+        "mdbreact": "^4.25.2",
+        "multer": "^1.4.2",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.2",
+        "react-alert": "^6.0.0",
+        "react-charts": "^2.0.0-beta.6",
+        "react-kakao-maps": "^0.0.13",
+        "react-map-gl": "^5.2.3",
+        "react-naver-maps": "^0.0.13",
+        "react-router-dom": "^5.1.2",
+        "redux-pender": "^2.0.12"
+    },
+    "devDependencies": {
+        "concurrently": "^4.0.1",
+        "declare-react-module": "^1.13.0"
+    }
+}
