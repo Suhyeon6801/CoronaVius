@@ -6,14 +6,7 @@ import Corona from './components/Corona';
 import About from './components/About';
 import Map from './components/Map';
 import State from './components/State';
-
-// const useStyles = makeStyles(theme => ({
-//   root: {
-//     '& > *': {
-//       margin: theme.spacing(1),
-//     },
-//   },
-// }));
+import Predict from './components/Predict';
 
 
 class App extends React.Component {
@@ -34,6 +27,7 @@ class App extends React.Component {
         <Map line-height="4em"></Map>
         <State line-height="4em"></State>
         <Corona line-height="4em" ></Corona>
+        <Predict line-height="4em"></Predict>
       </div>
     );
   }
