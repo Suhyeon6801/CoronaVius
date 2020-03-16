@@ -28,8 +28,11 @@ class App extends React.Component {
         <State line-height="4em"></State>
         <Corona line-height="4em" ></Corona>
         <Predict line-height="4em"></Predict>
+<<<<<<< HEAD
 
         <br /><br /><br /><br /><br /><br />
+=======
+>>>>>>> f4383bfa977a29f62fc7a110f1465932bf56cdbc
       </div>
     );
   }
