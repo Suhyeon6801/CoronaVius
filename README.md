@@ -7,7 +7,7 @@
 
 > Front-end : React.js  
 > Back-end : node.js, AWS RDS, Mysql  
-> Crawling & AI(predict) : python - Beautifulsoup4, prophet  
+> Crawling & Predict : python - Beautifulsoup4, prophet
 
 
 ### 구현기능
