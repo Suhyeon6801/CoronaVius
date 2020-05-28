@@ -18,10 +18,10 @@
 - 서울시 확진자 예측 : python에서 prophet패키지를 이용하여 시계열 데이터를 분석하여 일주일 뒤의 확진자 수 예측, 그래프로 구현.  
 
 ## Screenshot  
-  <img src="https://user-images.githubusercontent.com/28249931/77292013-c8004d00-6d22-11ea-8f84-a322de57f498.PNG" width="450" height="300"></img>
-  <img src="https://user-images.githubusercontent.com/28249931/77292042-de0e0d80-6d22-11ea-8df2-d902e365bb91.png" width="450" height="300"></img>
-  <img src="https://user-images.githubusercontent.com/28249931/77292052-e403ee80-6d22-11ea-9bc5-87ca178dfc56.PNG" width="450" height="300"></img>
-  <img src="https://user-images.githubusercontent.com/28249931/77292057-e5cdb200-6d22-11ea-9c40-81ab0cfb3c88.PNG" width="450" height="300"></img>
-  <img src="https://user-images.githubusercontent.com/28249931/77292061-e8c8a280-6d22-11ea-8979-50d093cff427.PNG" width="450" height="300"></img>
-  <img src="https://user-images.githubusercontent.com/28249931/77292177-24636c80-6d23-11ea-9dea-4a5d640b4f03.PNG" width="450" height="300"></img>
-  <img src="https://user-images.githubusercontent.com/28249931/77292130-0c8be880-6d23-11ea-9759-40890665ff06.png" width="450" height="300"></img>
+  <img src="https://user-images.githubusercontent.com/28249931/77292013-c8004d00-6d22-11ea-8f84-a322de57f498.PNG" width="432" height="300"></img>
+  <img src="https://user-images.githubusercontent.com/28249931/77292042-de0e0d80-6d22-11ea-8df2-d902e365bb91.png" width="432" height="300"></img>
+  <img src="https://user-images.githubusercontent.com/28249931/77292052-e403ee80-6d22-11ea-9bc5-87ca178dfc56.PNG" width="432" height="300"></img>
+  <img src="https://user-images.githubusercontent.com/28249931/77292057-e5cdb200-6d22-11ea-9c40-81ab0cfb3c88.PNG" width="432" height="300"></img>
+  <img src="https://user-images.githubusercontent.com/28249931/77292061-e8c8a280-6d22-11ea-8979-50d093cff427.PNG" width="432" height="300"></img>
+  <img src="https://user-images.githubusercontent.com/28249931/77292177-24636c80-6d23-11ea-9dea-4a5d640b4f03.PNG" width="432" height="300"></img>
+  <img src="https://user-images.githubusercontent.com/28249931/77292130-0c8be880-6d23-11ea-9759-40890665ff06.png" width="432" height="300"></img>
